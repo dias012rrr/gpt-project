@@ -38,6 +38,7 @@ class ChatApp:
         self.user_input.grid(row=2, column=0, padx=10, pady=10, sticky="ew")
         self.user_input.bind("<Return>", lambda event: self.send_message())
 
+
         self.send_button = tk.Button(root, text="Send", command=self.send_message, width=20, height=2, bg="white")
         self.send_button.grid(row=3, column=0, padx=10, pady=10, sticky="ew")
 
